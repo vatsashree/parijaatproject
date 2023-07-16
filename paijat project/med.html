@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" class="form">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" id="loginUsername">
+      <input type="password" placeholder="Password" id="loginPassword">
+      <button type="button" onclick="login()">Log In</button>
+      <p class="toggleMessage">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+    </form>
+    <form id="signupForm" class="form" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Username" id="signupUsername">
+      <input type="password" placeholder="Password" id="signupPassword">
+      <button type="button" onclick="signup()">Sign Up</button>
+      <p class="toggleMessage">Already have an account? <a href="#" onclick="toggleForm()">Log In</a></p>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
